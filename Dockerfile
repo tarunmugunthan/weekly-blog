@@ -16,8 +16,8 @@ RUN npm ci --omit=dev
 # Copy backend source code
 COPY backend/ ./
 
-# Create tmp directory for SQLite (if using in development)
-RUN mkdir -p .tmp
+# Create required directories
+RUN mkdir -p .tmp public
 
 # Build the application (non-interactive)
 RUN NODE_ENV=production npm run build
