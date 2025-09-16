@@ -1,0 +1,2 @@
+# This file tells Railway this is a monorepo
+# Backend service should be built from the backend/ directory

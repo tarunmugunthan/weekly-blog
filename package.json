@@ -6,7 +6,8 @@
   "scripts": {
     "start": "cd backend && npm start",
     "develop": "cd backend && npm run develop",
-    "build": "cd backend && npm run build",
+    "build": "cd backend && npm ci --omit=dev && npm run build",
+    "postinstall": "cd backend && npm ci --omit=dev",
     "frontend:dev": "cd frontend && npm run dev",
     "frontend:build": "cd frontend && npm run build",
     "frontend:start": "cd frontend && npm start"
@@ -21,6 +22,7 @@
   "author": "Weekly Blog",
   "license": "MIT",
   "engines": {
-    "node": ">=18.0.0"
+    "node": ">=18.0.0 <=20.x.x",
+    "npm": ">=6.0.0"
   }
 }
