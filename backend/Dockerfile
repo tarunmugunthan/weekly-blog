@@ -4,6 +4,9 @@ FROM node:18-alpine
 # Set working directory
 WORKDIR /app
 
+# Set environment to production early
+ENV NODE_ENV=production
+
 # Copy package files
 COPY package*.json ./
 
@@ -16,14 +19,11 @@ COPY . .
 # Create tmp directory for SQLite (if using in development)
 RUN mkdir -p .tmp
 
-# Build the application
-RUN npm run build
+# Build the application (non-interactive)
+RUN NODE_ENV=production npm run build
 
 # Expose port
 EXPOSE 1337
-
-# Set environment to production
-ENV NODE_ENV=production
 
 # Start the application
 CMD ["npm", "start"]
