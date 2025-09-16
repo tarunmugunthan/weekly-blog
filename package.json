@@ -1,0 +1,26 @@
+{
+  "name": "weekly-blog",
+  "version": "1.0.0",
+  "description": "A modern full-stack blog with CMS built using Strapi and Next.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "cd backend && npm start",
+    "develop": "cd backend && npm run develop",
+    "build": "cd backend && npm run build",
+    "frontend:dev": "cd frontend && npm run dev",
+    "frontend:build": "cd frontend && npm run build",
+    "frontend:start": "cd frontend && npm start"
+  },
+  "keywords": [
+    "blog",
+    "cms",
+    "strapi",
+    "nextjs",
+    "fullstack"
+  ],
+  "author": "Weekly Blog",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
