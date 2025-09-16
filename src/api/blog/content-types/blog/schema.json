@@ -65,8 +65,7 @@
     "author": {
       "type": "relation",
       "relation": "manyToOne",
-      "target": "plugin::users-permissions.user",
-      "inversedBy": "blogs"
+      "target": "plugin::users-permissions.user"
     },
     "meta_title": {
       "type": "string",
