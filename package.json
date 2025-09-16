@@ -4,13 +4,13 @@
   "description": "A modern full-stack blog with CMS built using Strapi and Next.js",
   "main": "index.js",
   "scripts": {
-    "start": "cd backend && npm start",
-    "develop": "cd backend && npm run develop",
-    "build": "cd backend && npm ci --omit=dev && npm run build",
-    "postinstall": "cd backend && npm ci --omit=dev",
-    "frontend:dev": "cd frontend && npm run dev",
-    "frontend:build": "cd frontend && npm run build",
-    "frontend:start": "cd frontend && npm start"
+    "start": "sh -c \"cd backend && npm start\"",
+    "develop": "sh -c \"cd backend && npm run develop\"",
+    "build": "sh -c \"cd backend && npm ci --omit=dev && npm run build\"",
+    "postinstall": "sh -c \"cd backend && npm ci --omit=dev\"",
+    "frontend:dev": "sh -c \"cd frontend && npm run dev\"",
+    "frontend:build": "sh -c \"cd frontend && npm run build\"",
+    "frontend:start": "sh -c \"cd frontend && npm start\""
   },
   "keywords": [
     "blog",
